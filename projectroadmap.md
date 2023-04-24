@@ -1,9 +1,9 @@
-Create projectroadmap.md file
-Find source code 
-Upload code on Visual studio code 
-Make necessary edits to uploaded code
-Test source code to confirm it runs
-Upload finished source code to Github repository 
-Make appropriate code changes on Github 
-Finalize code
-Finish by May 8th
+-Create projectroadmap.md file
+-Find source code 
+-Upload code on Visual studio code 
+-Make necessary edits to uploaded code
+-Test source code to confirm it runs
+-Upload finished source code to Github repository 
+-Make appropriate code changes on Github 
+-Finalize code
+-Finish by May 8th
