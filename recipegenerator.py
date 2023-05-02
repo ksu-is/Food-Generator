@@ -12,6 +12,7 @@ preferred_cuisine = input('What is your preferred cuisine? (e.g. Italian, Chines
 
 # Filter the recipe data based on the user's preferences
 filtered_recipes = recipe_data[
+    recipe_data['time_of_day'].str.contains(time_of_day, na=False) &
     recipe_data['dietary_preferences'].str.contains(dietary_preferences, na=False) &
     ~recipe_data['ingredients'].str.contains(ingredient_restrictions, na=False) &
     recipe_data['cuisine'].str.contains(preferred_cuisine, na=False)
@@ -24,4 +25,4 @@ if len(filtered_recipes) == 0:
 else:
     print(f'Suggested recipes based on your preferences ({len(filtered_recipes)} found):')
     for index, row in filtered_recipes.iterrows():
-        print(f'{row["title"]} - {row["cuisine"]} cuisine')
+        print(f'{row["meal"]} - {row["cuisine"]} cuisine')
