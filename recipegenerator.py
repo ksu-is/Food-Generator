@@ -18,11 +18,17 @@ filtered_recipes = recipe_data[
     recipe_data['cuisine'].str.contains(preferred_cuisine, na=False)
 ]
 # Display the suggested recipes to the user
-if len(filtered_recipes) == 0:
-    print('Sorry, no recipes found that match your preferences.')
-    if len(filtered_recipes)==7:
-        print('Here are your suggested seven recipes.')
+if time_of_day == 'breakfast' and dietary_preferences =='Lactose intolerant' and ingredient_restrictions =='almond milk' and preferred_cuisine=='French':
+    print('Your suggested meal based on your preferences is French Toast')
 else:
-    print(f'Suggested recipes based on your preferences ({len(filtered_recipes)} found):')
-    for index, row in filtered_recipes.iterrows():
-        print(f'{row["meal"]} - {row["cuisine"]} cuisine')
+    print('How about a croissant or crepe?')
+
+if time_of_day == 'lunch' and dietary_preferences =='N/A' and ingredient_restrictions =='N/A' and preferred_cuisine=='Italian':
+    print('Your suggested meal based on your preferences is Fettucine')
+else:
+    print('What about Gnocchi or Lasange? ')
+
+if time_of_day == 'Dinner' and dietary_preferences =='N/A' or 'gluten-free' and ingredient_restrictions =='allergic to nuts' and preferred_cuisine=='Italian':
+    print('Your suggested meal based on your preferences is Pizza ')
+else:
+    print('How about a Spaghetti Bolognese')
