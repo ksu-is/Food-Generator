@@ -1,0 +1,8 @@
+time_of_day,meal,dietary_preferences,ingredients,cuisine
+Breakfast,French Toast,Lactos intolerant, almond milk,French
+Lunch,Fettuccine,N/A, N/A,Italian
+Dinner,Fried chicken,N/A, allergic to nuts,American
+Breakfast,Pancakes,Vegetarian,no peanut butter,American
+Lunch,Spaghetti,vegan, N/A ,Italian
+Dinner,Pizza,N/A, gluten free,Italian
+Breakfast,Club sandwich,N/A, turkey breast preferred,American
